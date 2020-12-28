@@ -24,5 +24,5 @@ console.log(findNemo(nemo));
 console.log(findNemo(notNemo));
 console.log(findNemo(everyone));
 
-
+module.exports = findNemo;
 
