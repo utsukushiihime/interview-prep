@@ -5,15 +5,20 @@ let everyone = ['dory', 'bruce', 'marlin', 'nemo', 'gill', 'bloat', 'nigel', 'sq
 const findNemo = (arr) => {
     let t0 = performance.now();
     console.log(t0);
-    for (let item of arr) {
-        if (arr.includes('nemo')) {
-            return 'Nemo found';
-        } else {
-            return 'Nemo not found';
-        }
-
+    if (arr.includes('nemo')) {
+        return 'Nemo found';
+    } else {
+        return 'Nemo not found';
     }
 }
+
+// const findNemo = (arr) => {
+//     let t0 = performance.now();
+//     console.log(t0);
+//     for (let item of arr) {
+//         return item === 'nemo' ? 'Nemo found' : 'Nemo not found';
+//     }
+// }
 
 console.log(findNemo(nemo));
 console.log(findNemo(notNemo));
